@@ -1,0 +1,96 @@
+/* body font , bg color */
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: whitesmoke;
+}        
+/* Our Menu Heading style */
+#heading{
+    text-align: center;
+    font-size: larger;
+}
+
+/* section 1 bg-color*/
+#s1{
+    background-color:#ffcccb;    
+}
+/* section 2 bg-color*/
+#s2{
+    background-color: #FED8B1;
+}
+/* section 3 bg-color*/
+#s3{
+    background-color: mediumslateblue;
+    color:white;
+}
+/* Title 1 */
+#s1>h3{
+    background-color: #ff0800;
+    color:white;
+}
+/* Title 2 */
+#s2>h3{
+    background-color: tomato;
+    color:white;
+}
+/* Title 3 */
+#s3>h3{
+    background-color: #6f2da8;
+    color:white;
+}
+/* All title common styling */
+#s1>h3,#s2>h3,#s3>h3{
+    font-size: x-large;
+    float: right;
+    padding:10px;
+    margin-top:0;
+    border:solid 1px black;
+}
+
+/* common section style */
+section{
+    box-sizing: border-box;
+    border: solid 1px black;
+}
+/* section content style */
+section>div{
+    clear:right;padding-left: 7px;
+}
+
+
+/* Mobile  0 to 767px */
+@media only screen and (max-width:767px) {
+    #s1,#s2,#s3{
+        width: 100%;
+        float: none;        
+        margin:1%;
+    }    
+}
+
+/* Tablet 768px to 991px */
+@media only screen and (min-width:768px) and (max-width:991px) {
+    #s1,#s2{
+        width:48%;        
+        float:left;
+        margin-right:1%;        
+        margin-bottom:1%;
+    }
+    #s3{
+        width: 97%;
+        clear:left;        
+        
+    }
+}
+
+/* Desktop PC 992px to max */
+@media only screen and (min-width:992px ){            
+    #s1,#s2{
+        width:32%;
+        float:left;
+        margin-right: 1%;        
+    }    
+    #s3{
+        width: 32%;
+        float:left;
+        clear:none;        
+    }
+}
